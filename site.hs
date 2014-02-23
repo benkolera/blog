@@ -37,6 +37,10 @@ doHakyll = hakyllWith hakyllConf $ do
     route   idRoute
     compile copyFileCompiler
 
+  match "fonts/*" $ do
+    route   idRoute
+    compile copyFileCompiler    
+
   match "talks/*" $ do
     route $ setExtension "html"
     compile $ templatedPandoc "templates/talk.html" "navTalks"
