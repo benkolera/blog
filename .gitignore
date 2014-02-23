@@ -4,3 +4,4 @@ _site
 node_modules/
 dist/
 /blog
+cabal.sandbox.config
