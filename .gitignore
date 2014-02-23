@@ -1,0 +1,6 @@
+.cabal-sandbox
+_cache
+_site
+node_modules/
+dist/
+/blog

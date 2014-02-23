@@ -1,0 +1,12 @@
+files="*.cabal site.hs"
+exclude="(\.#.*|flymake).hs$"
+
+do_build() {
+  cabal build
+}
+
+cabal configure && do_build
+
+while $(inotifywait -qq -r --exclude $exclude -e modify -e create -e move $files) ; do
+  do_build
+done;  

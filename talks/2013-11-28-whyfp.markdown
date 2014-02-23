@@ -1,0 +1,7 @@
+---
+title: Why Functional Programming?
+location: BFPG
+location-url: http://www.bfpg.org
+slides-url: http://whyfp.benkolera.com
+---
+
