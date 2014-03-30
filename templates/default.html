@@ -18,60 +18,59 @@
 
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        $partial("templates/nav.html")$
-      </div>
-    </div>
-
     <div class="container">
-      <div class="blog-header">
-        <h1 class="blog-title">Confessions of a Typeholic</h1>
-        <p class="lead blog-description">Static types. Functional programming. Software that works. :)</p>
+      <div class="row">
+        <div class="header">
+          <h1 class="header-title">Confessions of a Typeholic</h1>
+          <p class="lead header-description">A humble web dev trying to make the world a saner, more functional place.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="nav">
+          <a href="/">About Me</a> | 
+          <a href="/posts.html">Posts</a> | 
+          <a href="/talks.html">Talks</a>
+          <hr />
+        </div>
       </div>
 
       <div class="row">
-
-        <div class="col-sm-8 blog-main">
+        <div class="col-xs-12 col-sm-9 col-md-10">
           $body$
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module">
-            <ol class="list-unstyled socal-list">
-              <li>
-                <a href="www.github.com/benkolera">
-                    <i class="fa fa-github fa-2x" /> Github
-                </a>
-              </li>
-              <li>
-                <a href="www.twitter.com/benkolera"> 
-                    <i class="fa fa-twitter fa-2x" /> Twitter
-                </a>
-              </li>
-              <li>
-                <a href="http://www.linkedin.com/profile/view?id=57022255"> 
-                  <i class="fa fa-linkedin fa-2x" /> LinkedIn
-                </a>
-              </li>              
-            </ol>
+        <div class="col-xs-12 col-sm-3 col-md-2 col-offset-md-1">
+          <hr class="visible-xs"/>
+          <div class="sidebar">
+            <div class="sidebar-me">
+              <img title="me" 
+                   alt="me" 
+                   src="http://www.gravatar.com/avatar/a3a40b5b547344370d45ad0f805b4d81?d=identicon&s=120" />
+            </div>
+            <p class="sidebar-name">
+              Ben Kolera <br />
+              Brisbane, Australia
+            </p>
+            <p>
+              <a href="http://www.github.com/benkolera"><i class="fa fa-github fa-2x"></i></a>
+              <a href="http://www.twitter.com/benkolera"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="http://www.linkedin.com/profile/view?id=57022255"><i class="fa fa-linkedin fa-2x"></i></a>
+              <br />
+              <a href="http://bfpg.org/">bfpg.org</a>
+            </p>
           </div>
         </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <div class="blog-footer">
-      <p>
-        This site made possible by the awesomeness of 
-        <a href="http://jaspervdj.be/hakyll">Hakyll</a> 
-        and 
-        <a href="http://getbootstrap.com">Bootstrap</a>
-      </p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+      </div>
+      <div class="row">
+        <div class="blog-footer">
+          <p>
+            Made possible with 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a> 
+            and 
+            <a href="http://getbootstrap.com">Bootstrap</a>.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

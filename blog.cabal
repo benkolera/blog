@@ -17,7 +17,8 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 executable blog
-  main-is:             site.hs
+  main-is:             Site.hs
+  hs-source-dirs:      hs
   build-depends:       base >=4.6 && <4.7
                      , binary
                      , blaze-html

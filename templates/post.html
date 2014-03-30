@@ -1,11 +1,37 @@
 <div class="blog-post">
-  <h2 class="blog-post-title"><a href="$url$">$title$</a></h2>
-  <p class="blog-post-meta">
-    $date$     
-    $if(author)$
-      by $author$
-    $endif$
-  </p>
+  <h2>$title$</h2>
+
   $body$
-  $prettytags$
+
+  <div class="blog-post-meta">
+    <div class="meta-group">
+      <i class="fa fa-calendar fa-fw"></i> $date$ 
+    </div>
+    <div class="meta-group">
+      <i class="fa fa-tags fa-fw"></i> $tags$
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+<hr />
+
+<div id="disqus_thread"></div>
 </div>
+
+<script type="text/javascript">
+  var disqus_identifier = '$url$';
+  var disqus_url = 'http://benkolera.com' + '$url$';
+  var disqus_title = '$title$';
+  (function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'http://benkolera.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>
+  <p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=jaspervdj">comments powered by Disqus.</a></p>
+</noscript>
+
+
+
+
